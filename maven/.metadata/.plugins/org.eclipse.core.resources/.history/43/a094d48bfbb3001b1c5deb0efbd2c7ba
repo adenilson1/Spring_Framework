@@ -1,0 +1,39 @@
+package br.com.ad.loja;
+
+import java.math.BigDecimal;
+
+public class Produto {
+	private String nome;
+	private BigDecimal PRECO;
+	
+	
+	public Produto(String nome, BigDecimal pRECO) {
+		this.nome = nome;
+		PRECO = pRECO;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public BigDecimal getPRECO() {
+		return PRECO;
+	}
+
+
+	public void setPRECO(BigDecimal pRECO) {
+		PRECO = pRECO;
+	}
+	
+	
+	
+	
+
+}
