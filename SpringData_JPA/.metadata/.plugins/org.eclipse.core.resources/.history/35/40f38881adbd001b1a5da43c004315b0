@@ -1,0 +1,14 @@
+package br.com.ad.spring.data.orm;
+
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class Endereco {
+	
+	private Integer numero;
+	private String rua;
+	private String bairro;
+	private String cidade;
+	private String estado;
+
+}

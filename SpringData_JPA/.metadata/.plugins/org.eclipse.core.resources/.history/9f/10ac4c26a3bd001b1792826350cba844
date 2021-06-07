@@ -1,0 +1,5 @@
+package br.com.ad.spring.data.orm;
+
+public class Funcionario {
+
+}

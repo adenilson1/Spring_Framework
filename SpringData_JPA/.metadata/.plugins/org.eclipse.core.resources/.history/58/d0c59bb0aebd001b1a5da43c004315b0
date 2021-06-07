@@ -1,0 +1,29 @@
+package br.com.ad.spring.data.orm;
+
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "unidades")
+public class Unidade {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String descricao;
+	
+	@Embedded
+	private Endereco endereco;
+	
+	public Unidade(Integer numero, String rua, String bairro, String cidade, String estado, String descricao) {
+		this.endereco = new Endereco(numero, rua, bairro, cidade, estado);
+		this.descricao = descricao;
+	}
+	
+	
+
+}

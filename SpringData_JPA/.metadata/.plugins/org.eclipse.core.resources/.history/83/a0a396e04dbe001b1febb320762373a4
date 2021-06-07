@@ -1,0 +1,36 @@
+package br.com.ad.spring.data.service;
+
+import java.util.Scanner;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class RelatoriosService {
+	private Boolean system = true;
+	
+	public void inicial(Scanner scanner) {
+		while (system) {
+			System.out.println("Qual a ação de cargo deseja executar");
+			System.out.println("0 - Sair");
+			System.out.println("1 - Salvar");
+			System.out.println("2 - Atualizar");
+			System.out.println("3 - Visualizar");
+			System.out.println("4 - Deletar");
+
+			int action = scanner.nextInt();
+
+			switch (action) {
+			case 1:
+				break;
+
+			default:
+				system = false;
+				break;
+			}
+		}
+
+	}
+	
+	
+
+}

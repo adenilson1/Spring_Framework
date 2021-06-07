@@ -1,0 +1,6 @@
+package br.com.ad.spring.data.service;
+
+public class Snippet {
+	Unidade unidade = new Unidade();
+}
+
